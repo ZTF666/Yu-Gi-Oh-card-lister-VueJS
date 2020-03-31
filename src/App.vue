@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <div class="search">
-      <form @submit.prevent="callApi">
-        <input type="text" v-model="query" />
-        <button>Go</button>
-      </form>
-    </div>
+    <form @submit.prevent="callApi" class="form">
+      <div class="search container-fluid input-group mb-3">
+        <input type="text" v-model="query" class="form-control" />
+        <div class="input-group-append">
+          <button type="button" class="btn btn-outline-danger">Go</button>
+        </div>
+      </div>
+    </form>
 
     <div class="grid-container">
       <div v-for="card in cards" :key="card.id" class="grid-item">
@@ -42,6 +44,8 @@ export default {
             console.log(data);
             this.query = "";
           });
+      } else {
+        alert("Please type fill the search field ! Thank you");
       }
     }
   }
