@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container-fluid mt-5">
     <div class="container mt-5">
       <form @submit.prevent="callApi" class="form">
         <div class="search container-fluid input-group mb-3">
@@ -12,7 +12,7 @@
     </div>
 
     <div class="grid-container">
-      <div v-for="card in cards" :key="card.id" class="grid-item">
+      <div v-for="card in cards" :key="card.id" class="grid-item mt-5">
         <h3>{{card.name}}</h3>
         <img :src="card.card_images[0].image_url" width="250" height="365" />
 
@@ -64,7 +64,7 @@ export default {
   display: grid;
   background-color: transparent;
   padding: 5px;
-  grid-gap: 5px;
+  grid-gap: 7px;
   width: 100%;
 }
 .grid-item {
