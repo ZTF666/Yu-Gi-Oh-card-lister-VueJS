@@ -1,18 +1,24 @@
 <template>
   <div id="app">
-    <form @submit.prevent="callApi" class="form">
-      <div class="search container-fluid input-group mb-3">
-        <input type="text" v-model="query" class="form-control" />
-        <div class="input-group-append">
-          <button type="button" class="btn btn-outline-danger">Go</button>
+    <div class="container mt-5">
+      <form @submit.prevent="callApi" class="form">
+        <div class="search container-fluid input-group mb-3">
+          <input type="text" v-model="query" class="form-control" />
+          <div class="input-group-append">
+            <button type="button" class="btn btn-outline-danger">Go</button>
+          </div>
         </div>
-      </div>
-    </form>
+      </form>
+    </div>
 
     <div class="grid-container">
       <div v-for="card in cards" :key="card.id" class="grid-item">
-        <img :src="card.card_images[0].image_url" width="150" height="265" />
         <h3>{{card.name}}</h3>
+        <img :src="card.card_images[0].image_url" width="250" height="365" />
+
+        <p>
+          <small>{{card.desc}}</small>
+        </p>
       </div>
     </div>
   </div>
@@ -53,14 +59,6 @@ export default {
 </script>
 
 <style>
-body {
-  background: linear-gradient(
-    54deg,
-    rgba(2, 0, 36, 1) 0%,
-    #c31432 33%,
-    #240b36 100%
-  );
-}
 .grid-container {
   grid-template-columns: repeat(auto-fit, minmax(414px, 1fr));
   display: grid;
