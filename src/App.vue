@@ -1,6 +1,11 @@
 <template>
   <div id="app" class="container-fluid mt-5">
     <div class="container mt-5">
+      <center>
+        <img src="./assets/logo.png" width alt srcset />
+      </center>
+    </div>
+    <div class="container mt-2">
       <form @submit.prevent="callApi" class="form">
         <div class="search container-fluid input-group mb-3">
           <input type="text" v-model="query" class="form-control" />
@@ -16,11 +21,22 @@
         <h3>{{card.name}}</h3>
         <img :src="card.card_images[0].image_url" width="250" height="365" />
 
-        <p>
-          <small>{{card.desc}}</small>
-        </p>
+        <div class="grid-container mt-2">
+          <div v-if="card.level" class>
+            {{card.level}}
+            <img
+              src="https://ygoprodeck.com/wp-content/uploads/2017/01/level.png"
+              width="20"
+              height="20"
+            />
+          </div>
+          <div v-if="card.type" class>{{card.type}}</div>
+          <div v-if="card.race" class>{{card.race}}</div>
+          <div v-if="card.desc" class>{{card.desc}}</div>
+        </div>
       </div>
     </div>
+    <!-- Modal Card Details -->
   </div>
 </template>
 
@@ -66,6 +82,8 @@ export default {
   padding: 5px;
   grid-gap: 7px;
   width: 100%;
+  font-weight: 100;
+  font-size: 16px;
 }
 .grid-item {
   background-color: transparent;
@@ -81,5 +99,8 @@ export default {
 .search {
   margin-left: auto;
   margin-right: auto;
+}
+.mydiv {
+  background-image: url("./assets/bg.jpg");
 }
 </style>

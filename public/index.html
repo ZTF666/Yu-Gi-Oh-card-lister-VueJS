@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-  <title><%= htmlWebpackPlugin.options.title %></title>
+  <title>YuGi World</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
@@ -18,6 +18,14 @@
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
+  <div id="side">
+    <div style="display:flex;justify-content:center;align-items:flex-end;">
+      <div>
+        <small id="tex">🌛 &copy; BlackHole🌌Studio LLC | Made with 💘 by an 👽 on a 💻 for
+          👾 | 2020 | E.A.N aka ZTF 🌜</small>
+      </div>
+    </div>
+  </div>
 </body>
 <style>
   body {
@@ -26,6 +34,17 @@
         rgba(2, 0, 36, 1) 0%,
         #c31432 33%,
         #240b36 100%);
+  }
+
+  #side {
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    color: aliceblue;
   }
 </style>
 
