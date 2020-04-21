@@ -22,7 +22,7 @@
         <img :src="card.card_images[0].image_url" width="250" height="365" />
 
         <div class="grid-container mt-2">
-          <div v-if="card.level" class>
+          <div v-if="card.level" class><strong>Level</strong>  :
             {{card.level}}
             <img
               src="https://ygoprodeck.com/wp-content/uploads/2017/01/level.png"
@@ -30,9 +30,12 @@
               height="20"
             />
           </div>
-          <div v-if="card.type" class>{{card.type}}</div>
-          <div v-if="card.race" class>{{card.race}}</div>
-          <div v-if="card.desc" class>{{card.desc}}</div>
+          <div v-if="card.atk" class><strong>Attack</strong>  : {{card.atk}}</div>
+          <div v-if="card.def" class><strong>Defense</strong>  : {{card.def}}</div>
+          <div v-if="card.type" class><strong>Type</strong>  : {{card.type}}</div>
+          <div v-if="card.race" class><strong>Race</strong> : {{card.race}}</div>
+          <div v-if="card.attribute" class><strong>Attribute</strong> : {{card.attribute}}</div>
+          <div v-if="card.desc" class><strong>Description</strong> : {{card.desc}}</div>
         </div>
       </div>
     </div>
