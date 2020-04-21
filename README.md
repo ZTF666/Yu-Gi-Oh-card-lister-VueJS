@@ -1,4 +1,4 @@
-# YuGi World
+# YuGiOh card lister
 
 another iteration of my old project which was a bit messy .
 
@@ -20,8 +20,3 @@ pnpm run serve
 pnpm run build
 ```
 
-### Lints and fixes files
-
-```
-pnpm run lint
-```
