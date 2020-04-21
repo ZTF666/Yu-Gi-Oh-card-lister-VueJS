@@ -19,12 +19,12 @@
   <div id="app"></div>
   <!-- built files will be auto injected -->
   <div id="side">
-    <div style="display:flex;justify-content:center;align-items:flex-end;">
-      <div>
+    <!-- <div style="display:flex;justify-content:center;align-items:flex-end;"> -->
+      <div class="ztf">
         <small id="tex">🌛 &copy; BlackHole🌌Studio LLC | Made with 💘 by an 👽 on a 💻 for
           👾 | 2020 | E.A.N aka ZTF 🌜</small>
       </div>
-    </div>
+    <!-- </div> -->
   </div>
 </body>
 <style>
@@ -37,15 +37,23 @@
   }
 
   #side {
-    height: 20px;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    bottom: 10px;
-    font-size: 20px;
-    font-weight: 900;
-    color: aliceblue;
-  }
+            height: 20px;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            top: 1px;
+        }
+
+        .ztf {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            background-color: transparent;
+            color: aliceblue;
+            font-size: 16px;
+        }
+
 </style>
 
 </html>
