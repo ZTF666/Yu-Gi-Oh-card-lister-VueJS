@@ -20,7 +20,7 @@ I'm not caching pictures , if you want to build on upon this , try and cach the 
 </p>
 <div>
 this is why :<p> 'Please download and store all data pulled from this API locally to keep the amount of API calls used to a minimum.</p>
-<p> Failure to do so may result in either your IP address being blacklisted or the API being rolled back. '</p>
+<p> Failure to do so may result in either your IP address being blacklisted or the API being rolled back.'</p>
 </div>
 
 <div align="center">
