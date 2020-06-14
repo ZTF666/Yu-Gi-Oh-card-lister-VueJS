@@ -7,7 +7,7 @@ The app uses the [YGO PRO DECK](https://db.ygoprodeck.com/api-guide/) ' V5 api t
 <img src="/src/assets/logo.png" >
 </div>
 
-this was made using :
+<p>this was made using :</p>
 
 <div align="center">
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.oy-DqixnUFjkoFoP1NoF6wHaHa%26pid%3DApi&f=1"  width='60' height='60'>
