@@ -4,16 +4,15 @@ A simple one page app that consumes the yugioh api and displays the details abou
 The app uses the [YGO PRO DECK](https://db.ygoprodeck.com/api-guide/) ' V5 api to fetch the data.
 
 <div align="center">
-<img src="/assets/logo.png" >
+<img src="/src/assets/logo.png" >
 </div>
 
 this was made using :
 
 <div align="center">
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.oy-DqixnUFjkoFoP1NoF6wHaHa%26pid%3DApi&f=1"  width='60' height='60'>
-<h2><strong>FETCH</strong>api</h2>
+<h6><strong>FETCH</strong> api</h6>
 <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvuejs.org%2Fimages%2Flogo.png&f=1&nofb=1"  width='60' height='60'>
-
 </div>
 
 <p>
@@ -25,7 +24,7 @@ this is why :<p> 'Please download and store all data pulled from this API locall
 </div>
 
 <div align="center">
-<img src="/assets/search.png"  >
+<img src="/src/assets/search.png"  >
 </div>
 
 - **Functionalities**
@@ -36,14 +35,14 @@ this is why :<p> 'Please download and store all data pulled from this API locall
 ## Search
 
 <div align="center">
-<img src="/assets/seaarch.png"  >
+<img src="/src/assets/seaarch.png"  >
 </div>
 
 ## Display
 
 <div align="center">
-<img src="/assets/cards.png"  >
-<img src="/assets/details.png"  >
+<img src="/src/assets/cards.png"  >
+<img src="/src/assets/details.png"  >
 </div>
 
 ## Project setup
